@@ -10,43 +10,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" 
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e284ee8560.js" crossorigin="anonymous"></script>
 </head>
 
 <html lang="en">
     <header>
-        <div class="title"><h1>tasare world</h1>
-            <h2>functional accessible beautiful</h2></div>
+        <div class="title">
+            <h1>tasare world</h1>
+            <h2>functional accessible beautiful</h2>
+        </div>
+
         <div class="links">
             <h3>github</h3>
             <h3>facebook</h3>
             <h3>instagram</h3>
             <a href="#contact">direct contact</a>
+            <i class="fas fa-adjust" alt="lghtbulb icon">toggle mode</i>
         </div>
     </header>
 
     <main>
         <section class="work-type">
-            <img role="presentation" alt="web development image">
+            <i class="fas fa-code" role="presentation" alt="code icon"></i>
             <h3>web development</h3>
-            <p class="description">description in 1-2 lines</p>
+            <p class="project-title">featured project:</p>
             <img role="presentation" alt="featured web development project image">
-            <p>description and link to favorite project</p>
-            <p class="full-description">more detail of what I do</p>
+            <p>short description and link to favorite project</p>
+
+            <div class="dropdown">
+                <i class="fas fa-plus" alt="processing js image">read more</i>
+                <p class="full-description">more detail of what I do</p>
+            </div>
+
             <a href="my-github">visit my GitHub for more examples</a>
         </section>
+
         <section class="work-type">
-            <img role="presentation" alt="processing js image">
+            <i class="fas fa-star-of-life" role="presentation" alt="star icon"></i>
             <h3>creative processing.js</h3>
-            <p class="description">description in 1-2 lines</p>
+            <p class="project-title">featured project</p>
             <img role="presentation" alt="featured processing js project image">
-            <p>description and link to favorite project</p>
-            <p class="full-description">more detail of what I do</p>
-            <a href="my-p5.js">Examples</a>
+            <p>short description and link to favorite project</p>
+
+            <div class="dropdown">
+                <i class="fas fa-plus" alt="processing js image">read more</i>
+                <p class="full-description">more detail of what I do</p>
+            </div>
+
+            <a href="my-p5.js">visit my processing.js page for more examples</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy;2021 tasare.world & Anya Temple</p>
         <p id="contact">anya dot temple at gmail dot com</p>
+        <p class="credits">last updated 6 July 2021</p>
+        <p class="credits">&copy;2021 tasare.world & Anya Temple</p>
+        <p class="credits">icons from <a href="fontawesome.com">Font Awesome</a></p>
     </footer>
 </html>
