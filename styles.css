@@ -1,7 +1,8 @@
 /*
 Color Suggestions - 
 Dark Mode
-#1a1a1a - background
+#1f1f1f - main background
+#121212 - section background
 #85e680 - text green
 #e788bc - text pink
 #bb96e9 - text purple
@@ -18,7 +19,7 @@ Light Mode
 */
 
 html {
-    background-color: #1a1a1a;
+    background-color: #1f1f1f;
     font-size: 16px;
     box-sizing: border-box;
     color: #f9e1e8;
@@ -50,7 +51,7 @@ header {
 .keywords {
     justify-content: space-between;
     font-weight: 500;
-    
+    width: 375px;
 }
 
 .keywords .functional {
@@ -76,16 +77,33 @@ header {
     color: #f9e1e8;
 }
 
+.main {
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+}
+
+.web-dev {
+    grid-row: 1 / 2;
+}
+
+.p5-js {
+    grid-row: 2 / 3;
+}
+
 .work-type {
     display: grid; 
-    grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(5, 1fr);
     justify-items: left;
-    align-items: center;
+    align-items: top;
+    background-color: #0d0d0d;
+    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .fa-code, .fa-star-of-life {
     grid-area: 1 / 1 / 2 / 2;
     justify-self: center;
+    align-self: center;
 }
 
 .section-title {
@@ -95,26 +113,31 @@ header {
 }
 
 .project-image {
-    grid-area: 2 / 1 / 5 / 3;
+    grid-area: 2 / 1 / span 2 / span 2;
     width: 6rem;
     height: 6rem;
 }
 
 .project-title {
     font-weight: 600;
-    grid-area: 2 / 3 / 3 / 7;
+    grid-area: 2 / 3 / 3 / span 3;
+    width: 10rem;
+    height: 2rem;
 }
 
 .project-link {
     color: #e788bc;
 }
 
+.short-description {
+    grid-area: 3 / 3 / 4 / span 3;
+}
+
 .dropdown {
-    grid-area: 3 / 3 / 5 / span 4;
+    grid-area: 4 / 3 / 5 / span 3;
 }
 
 .more-link {
-    grid-area: 5 / 1 / 6 / span 6;
     color: #85e680;
 }
 
