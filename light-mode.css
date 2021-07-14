@@ -1,0 +1,64 @@
+/*
+Light Mode
+#ffffff - background
+#146625 - text green
+#a52249 - text pink
+#4e1466 - text purple
+#8e3952 - icons
+#1a1a1a - adjust
+*/
+
+html {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+#mode {
+    color: #1a1a1a;
+}
+
+/*****header*****/
+
+.functional {
+    color: #a52249;
+}
+
+.accessible {
+    color: #146625;
+}
+
+.beautiful {
+    color: #4e1466;
+}
+
+.links a {
+    color: #1a1a1a;
+}
+
+.fa-plus {
+    color: #4e1466;
+}
+
+/****projects*****/
+
+
+.fa-code {
+    color: #146625;
+}
+
+.projects {
+    background-color: seashell;
+}
+
+.project-link {
+    color: #a52249;
+}
+
+/***footer***/
+
+#contact {
+    color: #4e1466;
+}
+
+
+
