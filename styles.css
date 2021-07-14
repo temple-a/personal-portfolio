@@ -7,7 +7,7 @@ Dark Mode
 #e788bc - text pink
 #bb96e9 - text purple
 #f9e1e8 - icons & title
-#fdf32a - lightbulb
+#fdf32a - adjust
 
 Light Mode
 #ffffff - background
@@ -15,7 +15,7 @@ Light Mode
 #a52249 - text pink
 #4e1466 - text purple
 #8e3952 - icons
-#1a1a1a - lightbulb
+#1a1a1a - adjust
 */
 
 html {
@@ -26,6 +26,16 @@ html {
     font-family: "Montserrat", "Helvetica", sans-serif;
 }
 
+#mode {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #fdf32a;
+}
+
+.fa-adjust {
+    font-size: 1rem;
+}
 
 /*****header*****/
 
@@ -35,34 +45,31 @@ header {
     line-height: 0;
 }
 
-.mode {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    font-size: 1rem;
-    color: #fdf32a;
-}
-
 .title, .keywords, .links {
     display: flex;
-    width: 100%;
     margin: 0.5rem;
 }
 
 .title {
     font-weight: 600;
     justify-content: left;
+    height: 1.5rem;
 }
 
-.keywords .functional {
+.keywords {
+    font-size: larger;
+    width: 80%;
+}
+
+.functional {
     color: #e788bc;
 }
 
-.keywords .accessible {
+.accessible {
     color: #85e680;
 }
 
-.keywords .beautiful {
+.beautiful {
     color: #bb96e9;
 }
 
@@ -77,8 +84,6 @@ header {
 
 .fa-plus {
     color: #bb96e9;
-    align-self: center;
-    font-size: 1.5rem;
 }
 
 .dropdown {
@@ -86,33 +91,29 @@ header {
 }
 
 
-
-/****projects*****/
-
-
-.projects-header {
-    display: flex;
-}
-
-.fa-code {
-    color: #85e680;
-}
-
-.fas {
+.fa-code, .fa-plus {
     justify-self: center;
     align-self: center;
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
 
+/****projects*****/
+
+
+.fa-code {
+    color: #85e680;
+}
+
 .projects {
-    display: grid;
-    grid-template-rows:  1fr 1fr;
-    grid-auto-rows: 1fr;
-    row-gap: 1rem;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #0d0d0d;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
+}
+
+.projects-header {
+    display: flex;
 }
 
 .project-item {
@@ -145,7 +146,27 @@ header {
     font-weight: 600;
 }
 
+/***footer***/
 
+footer {
+    height: fit-content;
+    margin: 0.5rem;
+}
+
+.fa-star-of-life {
+    color: #fdf32a;
+    margin-right: 0.5rem;
+}
+
+#contact {
+    color: #bb96e9;
+    font-weight: 500;
+}
+
+.credits {
+    font-size: 0.8em;
+    line-height: 0.5rem;
+}
 
 
 
