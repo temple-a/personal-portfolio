@@ -100,7 +100,7 @@ header {
 }
 
 #plus {
-
+    display: flex;
 }
 
 #minus {
