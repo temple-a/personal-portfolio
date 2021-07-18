@@ -82,20 +82,33 @@ header {
     color: #f9e1e8;
 }
 
-.fa-plus {
+.fa-plus, .fa-minus {
     color: #bb96e9;
 }
 
 .dropdown {
     display: flex;
+    flex-wrap: wrap;
 }
 
 
-.fa-code, .fa-plus {
+.fa-code, .fa-plus, .fa-minus {
     justify-self: center;
     align-self: center;
     font-size: 1.5rem;
     margin-right: 0.5rem;
+}
+
+#plus {
+
+}
+
+#minus {
+    display: none;
+}
+
+#approach-text {
+    display: none;
 }
 
 /****projects*****/
