@@ -25,7 +25,12 @@ let lightMode = document.getElementById('lightmode');
 let mode = document.getElementById('mode');
 
 function lightModeToggle() {
-    lightMode.setAttribute('href', 'light-mode.css');
+    let currentMode = lightMode.getAttribute('href');
+    if (currentMode === 'null') {
+        lightMode.setAttribute('href', 'light-mode.css');
+    } else {
+        lightMode.setAttribute('href', 'null');
+    } 
 }
 
 mode.addEventListener('click', lightModeToggle);
