@@ -18,7 +18,7 @@ Light Mode
 #1a1a1a - adjust
 */
 
-html {
+body {
     background-color: #1f1f1f;
     font-size: 16px;
     box-sizing: border-box;
@@ -63,10 +63,12 @@ header {
 
 .functional {
     color: #e788bc;
+    margin-right: 1rem;
 }
 
 .accessible {
     color: #85e680;
+    margin-right: 1rem;
 }
 
 .beautiful {
@@ -89,8 +91,12 @@ header {
 .dropdown {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0.5rem;
 }
 
+.dropdown h4 {
+    line-height: 0;
+}
 
 .fa-code, .fa-plus, .fa-minus {
     justify-self: center;
@@ -119,14 +125,19 @@ header {
 }
 
 .projects {
+    background-color: #0d0d0d;
+}
+
+.project-items {
     display: flex;
     flex-wrap: wrap;
-    background-color: #0d0d0d;
     padding: 0.5rem;
+    margin-right: 1rem;
 }
 
 .projects-header {
     display: flex;
+    margin-left: 1rem;
 }
 
 .project-item {
@@ -182,5 +193,22 @@ footer {
 }
 
 
+@media screen and (min-width: 768px) {
+    .keywords, .links {
+        max-width: 400px;
+    }
+    .project-items {
+        flex-wrap: nowrap;
+    }
+}
 
+@media screen and (min-width: 1024px) {
+    #plus, #minus {
+        display: none;
+    }
+
+    #approach-text {
+        display: flex;
+    }
+}
 
