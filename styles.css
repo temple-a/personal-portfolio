@@ -193,10 +193,13 @@ footer {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
     .keywords, .links {
         max-width: 400px;
     }
+}
+
+@media screen and (min-width: 768px) {
     .project-items {
         flex-wrap: nowrap;
     }
