@@ -1,10 +1,9 @@
 /*
 Light Mode
 #ffffff - background
-#146625 - text green
-#a52249 - text pink
-#4e1466 - text purple
-#8e3952 - icons
+#017910 - text green
+#cf2b4e - text pink
+#5b1776 - text purple
 #1a1a1a - adjust
 */
 
@@ -20,15 +19,16 @@ body {
 /*****header*****/
 
 .functional {
-    color: #a52249;
+    color: #cf2b4e;
 }
 
 .accessible {
-    color: #146625;
+    color: #017910;
 }
 
 .beautiful {
-    color: #4e1466;
+    color: #5b1776;
+    font-weight: 500;
 }
 
 .links a {
@@ -43,11 +43,11 @@ body {
 
 
 .fa-code {
-    color: #146625;
+    color: #017910;
 }
 
 .projects {
-    background-color: seashell;
+    background-color: #e6d5ff;
 }
 
 .project-link {
@@ -58,6 +58,10 @@ body {
 
 #contact {
     color: #4e1466;
+}
+
+.fa-star-of-life {
+    color: #fd9e03;
 }
 
 
