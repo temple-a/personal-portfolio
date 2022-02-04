@@ -132,7 +132,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 0.5rem;
-    margin-right: 1rem;
 }
 
 .projects-header {
@@ -202,6 +201,7 @@ footer {
 @media screen and (min-width: 768px) {
     .project-items {
         flex-wrap: nowrap;
+        width: 50%;
     }
 }
 
