@@ -59,6 +59,8 @@ header {
 .keywords {
     font-size: larger;
     width: 80%;
+    justify-content: space-between;
+    font-weight: 500;
 }
 
 .functional {
@@ -75,15 +77,9 @@ header {
     color: #bb96e9;
 }
 
-.keywords {
-    justify-content: space-between;
-    font-weight: 500;
-}
-
 .links a {
     color: #f9e1e8;
-    font-weight: 500;
-    justify-content: space-around;
+    margin-left: 1rem;
 }
 
 .fa-plus, .fa-minus {
