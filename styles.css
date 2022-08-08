@@ -75,13 +75,15 @@ header {
     color: #bb96e9;
 }
 
-.keywords, .links {
+.keywords {
     justify-content: space-between;
     font-weight: 500;
 }
 
 .links a {
     color: #f9e1e8;
+    font-weight: 500;
+    justify-content: space-around;
 }
 
 .fa-plus, .fa-minus {
